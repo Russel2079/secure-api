@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-// eslint-disable-next-line new-cap
+eslint-disable-next-line new-cap
 const router = require('@awaitjs/express').Router();
 const {body} = require('express-validator');
 const jwt = require('jsonwebtoken');
