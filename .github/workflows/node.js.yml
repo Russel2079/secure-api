@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
       with:
         node-version: '12.x'
     - name: Set environment variables
@@ -25,7 +25,7 @@ jobs:
     - name: Run all tests
       run: npm test
     - name: Archive test and code-coverage results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: ${{ always() }}
       with:
         name: test-and-code-coverage-report
